@@ -977,24 +977,33 @@ SP
   .mv__title-1{
     font-size: 1.5rem;
     padding: 7px 8px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
   
   .mv__title-2{
     font-size: 1.5rem;
     padding: 7px 8px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
   
   .mv__sub-title{
     font-size: 1rem;
     padding: 7px 8px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
   
   .mv__link{
     margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    flex-direction: column;
   }
   
   .mv__number{
-    margin-right: 40px;
+    margin-right: 0px;
   }
   
   .mv__number span{
@@ -1002,9 +1011,13 @@ SP
   }
   
   .mv__contact{
+    margin-top: 20px;
+    justify-content: center;
     font-size: 1rem;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
   
   .scrolldown2{
@@ -1012,52 +1025,60 @@ SP
   }
   
   .mv__news{
-    background-color: #fff;
-    transform: translateY(60px);
-    display: flex;
-    align-items: center;
+    transform: translateY(0px);
+    margin-top: 60px;
     padding-left: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-right: 20px;
     margin-left: 0px;
+    flex-direction: column;
   }
   
   .mv__news__title{
     font-size: 1rem;
     padding-right: 20px;
     margin-right: 20px;
+    border-right: none;
+  }
+
+  .mv__news__list li{
+    margin-top: 10px;
   }
   
   .mv__news__list li a time{
     margin-right: 20px;
   }
 
+  .mv__news__list li a p{
+    font-size: 0.875rem;
+  }
+
 
   /* CONCEPT */
 
   .concept{
-    margin-top: 80px;
+    margin-top: 200px;
   }
 
   .concept__dot{
     margin: 0 auto;
-    width: 110%;
+    width: auto;
     height     : auto;
     padding-top: 0;
+    text-align: center;
   }
 
   .concept__title{
     writing-mode: horizontal-tb;
-    font-size: 4rem;
+    font-size: 3rem;
     color: #192F60;
     letter-spacing: .1em;
   }
 
   .concept__container{
-    position: absolute;
-    top: 50px;
-    left: 100px;
+    top: 0px;
+    left: 0px;
     position: static;
   }
 
@@ -1068,10 +1089,15 @@ SP
 
   .concept__img{
     margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
   }
 
   .concept__text{
     padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .concept__text__title-1{
@@ -1086,6 +1112,7 @@ SP
 
   .concept__text__price{
     margin-top: 20px;
+    text-align: left;
   }
 
   .concept__text__number{
@@ -1094,6 +1121,8 @@ SP
 
   .concept__down{
     margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .concept__btn-box{
@@ -1104,12 +1133,6 @@ SP
     width: 200px;
     padding: 10px;
   }
-
-  .concept__btn:hover{
-    color: #fff;
-    background-color: #192F60;
-  }
-
 
   /* FEATURE */
 
@@ -1148,6 +1171,10 @@ SP
     transform: translateX(0px);
   }
 
+  .feature__right__description br{
+    display: none;
+  }
+
   .feature__right ul li{
     margin-bottom: 20px;
   }
@@ -1180,14 +1207,15 @@ SP
   }
 
   .service__dot{
-    margin: 0 0 0 auto;
+    margin: 0 auto;
     width: auto;
-    height     : auto;
+    height: auto;
+    text-align: center;
   }
 
   .service__title{
     writing-mode: horizontal-tb;
-    font-size: 4rem;
+    font-size: 3rem;
     color: #192F60;
     letter-spacing: .1em;
     position: static;
@@ -1195,11 +1223,15 @@ SP
 
   .service__container{
     position: static;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   .service__top-title{
     padding: 7px 8px;
-    line-height: 1.25rem;
+    font-size: 1.25rem;
+    margin-top: 20px;
+    line-height: 1.5;
   }
 
   .service__description{
@@ -1216,6 +1248,15 @@ SP
 
   .service__list li{
     width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .service__list li:last-of-type{
+    margin-bottom: 0px;
+  }
+
+  .service__list__img{
+    width: 100%;
   }
 
   .service__list__title{
@@ -1223,20 +1264,24 @@ SP
     font-size: 1.25rem;
     padding: 0px 0px;
     transform: translateX(0px) translateY(0px);
+    margin-top: 10px;
   }
 
   .service__list__title::after{
     position: static;
+    margin-top: 5px;
   }
 
   .service__list__text{
     transform: translateY(0px);
     padding-left: 0px;
     padding-right: 0px;
+    margin-top: 10px;
   }
 
   .service__list__btn{
     margin-left: 0px;
+    margin-top: 10px;
     padding: 10px;
     width: 200px;
   }
@@ -1249,21 +1294,26 @@ SP
   }
 
   .works__dot{
+    margin: 0 auto;
     width: auto;
     height: auto;
     padding-top: 0px;
+    text-align: center;
   }
 
   .works__title{
     writing-mode: horizontal-tb;
     color: #192F60;
-    font-size: 4rem;
+    font-size: 3rem;
     letter-spacing: .1em;
   }
 
   .works__top{
     text-align: left;
     transform: translateY( 0px);
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .works__top__title{
@@ -1281,11 +1331,13 @@ SP
 
   .swiper-slide h3 {
     padding-left: 30px;
+    font-size: 1rem;
   }
 
   .swiper-slide p {
     margin-top: 20px;
     padding-left: 30px;
+    font-size: 0.875rem;
   }
 
   .swiper-slide a {
@@ -1303,53 +1355,54 @@ SP
   /* BLOG */
 
   .blog{
-    margin: 0 auto;
-    max-width: 1366px;
-    margin-top: 0px;
-    background-image: url(../img/blog_bg.png);
-    background-size: cover;
-    background-position: center top;
-    background-repeat: no-repeat;
+    margin-top: 80px;
     height: auto;
-    position: relative;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .blog__dot{
-    margin: 0 0 0 auto;
-    margin-top: 80px;
-    margin-left: 0;
+    margin: 0 auto !important;
     width: auto;
     height: auto;
+    text-align: center;
   }
 
   .blog__title{
     writing-mode: horizontal-tb;
-    font-size: 4rem;
+    font-size: 3rem;
     color: #192F60;
     letter-spacing: .1em;
     position: static;
   }
 
   .blog__container{
+    margin-top: 20px;
     position: static;
+    top: 0;
+    left: 0%;
+    transform: translateX(0%);
   }
 
   .blog__list{
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .blog__list li{
-    padding-top: 0px;
-    padding-bottom: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
+    white-space: wrap;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .blog__list li a{
-    margin-left: 20px;
+    margin-left: 0px;
   }
 
   /* FOOTER */
@@ -1361,6 +1414,8 @@ SP
   .footer__top{
     padding-top: 60px;
     padding-bottom: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .footer__top__title{
@@ -1386,6 +1441,8 @@ SP
   .footer__down{
     padding-top: 30px;
     padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .footer__down address{
