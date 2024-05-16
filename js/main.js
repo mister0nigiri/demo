@@ -15,3 +15,19 @@ const swiper = new Swiper(".swiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+
+
+const btn = document.querySelector('.btn-menu');
+const nav = document.querySelector('.header-sp__nav');
+ 
+btn.addEventListener('click', () => {
+  nav.classList.toggle('open-menu')
+
+  if (btn.innerHTML === 'メニュー') {
+    btn.innerHTML = '閉じる';
+  } else {
+    btn.innerHTML = 'メニュー';
+  }
+
+});
